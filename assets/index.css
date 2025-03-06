@@ -93,3 +93,39 @@ button:hover {
     border-radius: 8px;
     box-shadow:none;
 }
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    #searchContainer {
+        margin-top: 120px; 
+    }
+
+    #imageContainer {
+        margin-top: 80px; 
+    }
+
+    #charInput {
+        font-size: 20px;
+        padding: 10px;
+        width: 100px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    #displayedImage {
+        width: 90%;
+        height: auto;
+    }
+
+    #imageTitle {
+        font-size: 16px;
+    }
+}
