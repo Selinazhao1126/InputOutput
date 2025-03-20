@@ -9,6 +9,11 @@
 </head>
 <body>
     <h2 id="guideText">Enter a letter (A-Z) to discover an iconic landmark!</h2>
+
+    <div id="landmarkContainer">
+        <img id="landmarkImage" src="assets/landmarks.png" alt="Landmark Collage">
+    </div>
+
     <div id="searchContainer">
         <input type="text" id="charInput" maxlength="1">
         <button onclick="displayImage()" id="submitButton">Show Image</button>
@@ -21,32 +26,15 @@
 
     <script>
         const images = [
-            "assets/Acropolis.jpeg", // A
-            "assets/BigBen.jpg", // B
-            "assets/Colosseum.jpg", // C
-            "assets/DubaiBurjKhalifa.jpg", // D
-            "assets/EiffelTower.jpg", // E
-            "assets/ForbiddenCity.jpg", // F
-            "assets/GrandCanyon.jpg", // G
-            "assets/Hagiasophia.jpg", // H
-            "assets/IguazuFalls.jpg", // I
-            "assets/JejuIsland.jpg", // J
-            "assets/KyotoFushimiInariShrine.jpg", // K
-            "assets/LeaningTowerofPisa.jpg", // L
-            "assets/MachuPicchu.jpg", // M
-            "assets/NeuschwansteinCastle.jpg", // N
-            "assets/OperaHouse.jpg", // O
-            "assets/Petra.jpg", // P
-            "assets/QinTerracottaArmy.jpg", // Q
-            "assets/RedSquare.jpg", // R
-            "assets/StatueofLiberty.jpg", // S
-            "assets/TajMahal.jpg", // T
-            "assets/Uluru.jpg", // U
-            "assets/VictoriaFalls.jpg", // V
-            "assets/WhiteHouse.jpg", // W
-            "assets/XianCityWall.jpg", // X
-            "assets/YellowstoneNationalPark.jpg", // Y
-            "assets/ZionNationalPark.jpg"  // Z
+            "assets/Acropolis.jpeg", "assets/BigBen.jpg", "assets/Colosseum.jpg",
+            "assets/DubaiBurjKhalifa.jpg", "assets/EiffelTower.jpg", "assets/ForbiddenCity.jpg",
+            "assets/GrandCanyon.jpg", "assets/Hagiasophia.jpg", "assets/IguazuFalls.jpg",
+            "assets/JejuIsland.jpg", "assets/KyotoFushimiInariShrine.jpg", "assets/LeaningTowerofPisa.jpg",
+            "assets/MachuPicchu.jpg", "assets/NeuschwansteinCastle.jpg", "assets/OperaHouse.jpg",
+            "assets/Petra.jpg", "assets/QinTerracottaArmy.jpg", "assets/RedSquare.jpg",
+            "assets/StatueofLiberty.jpg", "assets/TajMahal.jpg", "assets/Uluru.jpg",
+            "assets/VictoriaFalls.jpg", "assets/WhiteHouse.jpg", "assets/XianCityWall.jpg",
+            "assets/YellowstoneNationalPark.jpg", "assets/ZionNationalPark.jpg"
         ];
 
         const landmarks = [
